@@ -31,16 +31,27 @@ const App = () => (
                     <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center shadow-elegant">
                       <span className="text-white font-bold text-lg">P</span>
                     </div>
-                    <div className="hidden sm:block">
-                      <h1 className="text-lg font-bold text-foreground">Patidar Hospital</h1>
-                      <p className="text-xs text-muted-foreground">Excellence in Healthcare</p>
+                    <div>
+                      <h1 className="text-base sm:text-lg font-bold text-foreground">Patidar Hospital</h1>
+                      <p className="text-xs text-muted-foreground hidden sm:block">Excellence in Healthcare</p>
                     </div>
                   </div>
                 </div>
-                <div className="hidden md:flex items-center space-x-4">
-                  <div className="text-right">
-                    <p className="text-sm font-medium text-foreground">Emergency: 24/7</p>
-                    <p className="text-xs text-muted-foreground">+91 98765 43210</p>
+                <div className="flex items-center space-x-2">
+                  <div className="hidden md:flex items-center space-x-4">
+                    <div className="text-right">
+                      <p className="text-sm font-medium text-foreground">Emergency: 24/7</p>
+                      <p className="text-xs text-muted-foreground">+91 98765 43210</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-2 ml-4">
+                    <button className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
+                      Login
+                    </button>
+                    <span className="text-muted-foreground">|</span>
+                    <button className="text-sm font-medium text-primary hover:text-primary/80 transition-colors">
+                      Sign Up
+                    </button>
                   </div>
                 </div>
               </header>
